@@ -104,7 +104,7 @@ Pasos:
 La página quedará disponible en:
 
 ```
-https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/
+https://umb-html-5-basica.vercel.app/
 ```
 
 # 7. Autor
