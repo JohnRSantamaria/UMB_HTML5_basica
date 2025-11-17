@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Python para principiantes</title>
+
+    <!--
+      Decisión semántica:
+      - <title> descriptivo para que usuarios y lectores de pantalla
+        entiendan rápidamente el tema principal de la página.
+    -->
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Enlace de salto para accesibilidad: permite ir directo al contenido con teclado -->
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <header>
+      <div class="header-inner">
+        <div>
+          <h1 class="site-title">
+            Guía rápida de <span>Python</span>
+          </h1>
+          <p class="site-subtitle">
+            Página introductoria para aprender qué es Python, dónde se usa
+            y cómo empezar a escribir código.
+          </p>
+        </div>
+
+        <!-- Navegación principal con aria-label para lectores de pantalla -->
+        <nav aria-label="Navegación principal">
+          <ul>
+            <li><a href="#que-es-python">¿Qué es Python?</a></li>
+            <li><a href="#usos-python">Usos</a></li>
+            <li><a href="#primer-ejemplo">Primer ejemplo</a></li>
+            <li><a href="#plan-estudio">Plan de estudio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main id="contenido-principal">
+      <!-- Columna principal -->
+      <section aria-labelledby="que-es-python">
+        <header class="hero">
+          <div class="hero-visual" aria-hidden="true">
+            <!-- Imagen decorativa del “logo” Python -->
+            <img src="assets/img/python-logo.svg" alt="">
+            <span class="hero-badge">Nivel inicial</span>
+          </div>
+          <div class="hero-text">
+            <h2 id="que-es-python">¿Qué es Python?</h2>
+            <p>
+              Python es un lenguaje de programación de alto nivel, sencillo de leer
+              y muy usado en empresas reales. Esta página está pensada para
+              personas que quieren su primer contacto con Python de forma clara y
+              estructurada.
+            </p>
+            <div class="badge-row">
+              <span class="badge">Sintaxis sencilla</span>
+              <span class="badge">Comunidad enorme</span>
+              <span class="badge">Código legible</span>
+            </div>
+          </div>
+        </header>
+
+        <article aria-label="Conceptos básicos sobre Python">
+          <h3>Por qué se recomienda para empezar</h3>
+          <ul class="checklist">
+            <li>Código parecido a pseudocódigo: se entiende casi como leer texto.</li>
+            <li>Funciona en Windows, macOS y Linux sin complicarte la vida.</li>
+            <li>Tiene muchas librerías para casi cualquier cosa que quieras hacer.</li>
+          </ul>
+
+          <h3>Cómo se ve un programa en Python</h3>
+          <p>
+            Un ejemplo muy simple de programa que pregunta tu nombre y te saluda:
+          </p>
+
+          <figure>
+            <figcaption class="tip">Ejemplo de código de Python: saludo básico</figcaption>
+            <pre><code>nombre = input("¿Cómo te llamas? ")
+print(f"Hola, {nombre}. Bienvenido a Python.")</code></pre>
+          </figure>
+
+          <p>
+            La primera línea lee lo que escriba la persona usuaria, y la segunda
+            muestra el mensaje en pantalla.
+          </p>
+        </article>
+      </section>
+
+      <article aria-labelledby="usos-python">
+        <header>
+          <h2 id="usos-python">¿Para qué se usa Python?</h2>
+          <p>
+            Python se utiliza en muchos campos. Estos son algunos de los más
+            comunes:
+          </p>
+        </header>
+
+        <ul class="topics-list" aria-label="Áreas donde se usa Python">
+          <li>
+            <strong>Desarrollo web:</strong><br>
+            Backends con frameworks como Django o Flask.
+          </li>
+          <li>
+            <strong>Análisis de datos:</strong><br>
+            Librerías como <code>pandas</code> o <code>numpy</code>.
+          </li>
+          <li>
+            <strong>Automatización:</strong><br>
+            Scripts para tareas repetitivas (renombrar archivos, enviar correos, etc.).
+          </li>
+          <li>
+            <strong>Inteligencia artificial:</strong><br>
+            Modelos de machine learning con <code>scikit-learn</code>,
+            <code>TensorFlow</code> o <code>PyTorch</code>.
+          </li>
+        </ul>
+
+        <section aria-labelledby="primer-ejemplo">
+          <h3 id="primer-ejemplo">Tu primer ejemplo práctico</h3>
+          <p>
+            Este pequeño programa pregunta la edad y dice si la persona es mayor
+            de edad o no:
+          </p>
+
+          <figure>
+            <figcaption class="tip">Ejemplo Python: comprobar mayoría de edad</figcaption>
+            <pre><code>edad = int(input("¿Cuántos años tienes? "))
+
+if edad &gt;= 18:
+    print("Eres mayor de edad.")
+else:
+    print("Todavía no eres mayor de edad.")</code></pre>
+          </figure>
+
+          <p class="tip">
+            Prueba a cambiar el número 18 por otra edad límite y observa qué
+            ocurre.
+          </p>
+        </section>
+
+        <section aria-labelledby="plan-estudio">
+          <h3 id="plan-estudio">Plan de estudio recomendado</h3>
+          <p>
+            Un camino simple para aprender Python paso a paso podría ser:
+          </p>
+
+          <ol class="checklist">
+            <li>Instalar Python en tu computador (desde python.org).</li>
+            <li>Aprender variables, tipos de datos y operadores.</li>
+            <li>Practicar condicionales (<code>if</code>) y bucles (<code>for</code>, <code>while</code>).</li>
+            <li>Crear funciones pequeñas para reutilizar código.</li>
+            <li>Aplicar todo en un mini proyecto (ejemplo: calculadora, gestor de tareas).</li>
+          </ol>
+
+          <p>
+            Lo importante no es leer teoría infinita, sino escribir código, romperlo,
+            arreglarlo y entender cada error.
+          </p>
+        </section>
+      </article>
+
+      <!-- Columna lateral con recursos y formulario de contacto -->
+      <aside aria-label="Recursos adicionales y formulario de contacto">
+        <section aria-label="Resumen rápido sobre el enfoque de la página">
+          <h2>Resumen de esta página</h2>
+          <p class="tip">
+            Esta página NO es un curso completo, sino un punto de partida
+            claro para entender qué es Python y por dónde comenzar sin abrumarse.
+          </p>
+          <ul class="pill-list" aria-label="Temas resaltados en la página">
+            <li>Qué es Python</li>
+            <li>Casos de uso</li>
+            <li>Ejemplos simples</li>
+            <li>Plan de estudio</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="recursos">
+          <h2 id="recursos">Recursos recomendados</h2>
+          <p class="tip">
+            Estos recursos son sugerencias generales para seguir aprendiendo:
+          </p>
+          <ul class="checklist">
+            <li>Tutorial oficial de Python (documentación en la web oficial).</li>
+            <li>Cursos introductorios en plataformas de aprendizaje online.</li>
+            <li>Repositorios de ejemplos en GitHub para copiar y modificar.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="contacto">
+          <h2 id="contacto">Quiero aprender Python</h2>
+          <p class="tip">
+            Si quieres recibir recomendaciones personalizadas o enviar dudas
+            sobre tu progreso, puedes rellenar este formulario de ejemplo:
+          </p>
+
+          <!-- Formulario accesible: cada campo tiene su label y hay ayuda textual extra -->
+          <form aria-labelledby="contacto">
+            <fieldset>
+              <legend>Datos para enviarte recomendaciones de Python</legend>
+
+              <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required autocomplete="name" placeholder="Tu nombre">
+              </div>
+
+              <div>
+                <label for="nivel">Nivel actual en Python</label>
+                <select id="nivel" name="nivel" required aria-describedby="nivel-ayuda">
+                  <option value="">Selecciona tu nivel</option>
+                  <option value="ninguno">No sé nada todavía</option>
+                  <option value="basico">Básico: he visto algo de Python</option>
+                  <option value="intermedio">Intermedio</option>
+                </select>
+                <p id="nivel-ayuda" class="tip">
+                  Esto ayuda a adaptar las recomendaciones a tu ritmo.
+                </p>
+              </div>
+
+              <div>
+                <label for="mensaje">¿Qué te gustaría aprender?</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required aria-describedby="ayuda-mensaje"
+                  placeholder="Describe brevemente tus objetivos con Python"></textarea>
+                <p id="ayuda-mensaje" class="tip">
+                  Por ejemplo: automatizar tareas, trabajar con datos, crear APIs, etc.
+                </p>
+              </div>
+
+              <button type="submit">
+                Enviar (formulario de ejemplo)
+              </button>
+            </fieldset>
+          </form>
+
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; 2025 Guía rápida de Python – Página de ejemplo HTML.</p>
+        <div class="footer-links">
+          <a href="#que-es-python">Ir a ¿Qué es Python?</a>
+          <a href="#usos-python">Ir a Usos</a>
+          <a href="#plan-estudio">Ir a Plan de estudio</a>
+          <a href="#contacto">Ir a Contacto</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
