@@ -10,7 +10,7 @@
 5. [Validación del HTML](#5-validación-del-html)
 6. [Cómo visualizar la página](#6-cómo-visualizar-la-página)
     - [A. Localmente](#a-localmente)
-    - [B. GitHub Pages (opcional)](#b-github-pages-opcional)
+    - [B. Desplegado](#b-desplegado)
 7. [Autor](#7-autor)
 
 # 1. Propósito de la página
@@ -94,7 +94,7 @@ Pasos:
 1. Descargar o clonar este repositorio.
 2. Abrir `index.html` en un navegador.
 
-## B. GitHub Pages (opcional)
+## B. Desplegado
 
 1. Subir el repositorio a GitHub.
 2. En **Settings → Pages**, seleccionar rama `main`.
